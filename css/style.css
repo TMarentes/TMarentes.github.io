@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+/* Main Menu */
+
+.top-menu-container {
+    background-color: #ff9900;
+}
+
+.top-menu {
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.top-menu .menu-item {
+    list-style: none;
+    padding: 0.1em 0.5em;
+}
+
+.top-menu .link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+    border-radius: 0px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+.top-menu .link:hover {
+    background: #aaa;
+}
+
+.top-menu .menu-item.current .link {
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
+/* Page Header */
+
+.header {
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    margin-bottom: 0%;
+}
+
+.header .banner-title  {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+.logo {
+    padding-top: 5%;
+}
+
+.logo .logo-image {
+    max-width: 100px;
+}
+
+.header .title {
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1em;
+    padding: 0.1em 1em 0 1em;
+    color: #ff9900;
+}
+
+.header .description {
+    padding: 1em 1em 1% 1em;
+}
+
+.header .cta-button .link,
+.boxnavs .cta-button .link {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0px;
+    box-shadow: inset #ff9900 0 2px 1px, inset rgba(0,0,0,0.3) 0 -4px 1px;
+}
+
+.header .cta-button {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.header .cta-button .link:hover {
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+.page-overview .header {
+    background-image: url(../images/background-banner.jpg);
+}
+
+.page-about-us .header {
+    background-image: url(../images/background-about-us.jpg);
+}
+
+/* Main Content */
+
+.main-content,
+.reasons,
+.socials {
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+.reasons > .title {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.boxnavs {
+    background-color: #333;
+}
+
+.boxnavs .card {
+    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #000;
+    float: left;
+}
+
+.boxnavs .card:nth-child(even) {
+    background-color: #333;
+}
+
+.boxnavs .title {
+    color: white;
+    font-size: 3em;
+}
+
+.boxnavs .description {
+    color: white;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+}
+
+.main-content {
+    background: #eee;
+}
+
+.main-content .heading {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.main-content .text {
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 1%;
+}
+
+.card {
+    float: left;
+    width: 100%;
+    padding: 1%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.thumbnail {
+    float: left;
+    width: 30%;
+}
+
+/* Home Page */
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reasons .column .name,
+.socials .column .name {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.reasons .column .text {
+    margin-bottom: 1em;
+    color: #777;
+    text-align: center;
+}
+
+.teas {
+    padding-top:1em;
+}
+.reasons .icon,
+.socials .icon,
+.teas .thumbnail-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 10%;
+}
+
+.search {
+    text-align: center;
+    padding: 15px;
+}
+
+.search .search-input {
+    height: 25px;
+    width: 100%;
+}
+
+/* Page Footer */
+
+.footer {
+    padding: 1.5em;
+    text-transform: uppercase;
+}
+
+.secondary-menu .menu-item {
+    list-style: none;
+}
+
+.secondary-menu .link {
+    color: #999;
+}
+
+.copyright {
+    font-size: 70%;
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    /* Main Menu */
+
+    .top-menu {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+    }
+
+    .top-menu .menu-item {
+        padding: 0.75em 0.5em;
+    }
+
+    /* Page Header */
+
+    .header {
+        min-height: 40vh;
+    }
+
+    .header .title {
+        font-size: 4em;
+    }
+
+    /* Main Content */
+
+    .main-content,
+    .reasons {
+        padding: 3em;
+    }
+
+    .column {
+        width: 48%;
+    }
+
+    .column {
+        float: left;
+        width: 23%;
+        padding: 1%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .card {
+        float: left;
+        width: 47%;
+        padding: 1%;
+        padding-bottom: 0em;
+    }
+
+    .thumbnail {
+        float: left;
+        width: 30%;
+    }
+
+    .thumbnail-description {
+        float: left;
+        width: 70%;
+    }
+
+    .search .search-input {
+        height: 25px;
+        width: 300px;
+    }
+
+    /* Page Footer */
+
+    .footer {
+        padding: 1.5em 3em;
+    }
+
+    .secondary-menu {
+        display: flex;
+    }
+
+    .secondary-menu .menu-item {
+        padding: 0;
+        padding-right: 1.5em;
+    }
+}
+

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Discover new tastes and effects with a complete list of T2 tea flavours." />
+        <meta name="author" content="Theo Marentes" />
+
+        <title>Teas - T2 Book - Discover Tea Flavours</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="page-overview">
+        <nav class="top-menu-container">
+            <ul class="top-menu">
+                <li class="menu-item">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+
+                <li class="menu-item current">
+                    <a class="link" href="teas.html">Teas</a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="link" href="locations.html">Store Finder</a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <section class="banner-title">
+                <figure class="logo">
+                    <img class="logo-image" src="images/logo.png" alt="T2 logo" />
+                </figure>
+                
+                <h1 class="title">Flavours</h1>
+    
+                <p class="description">Discover new tastes and effects with a complete list of T2 tea flavours.</p>
+
+                <nav class="cta-button">
+                    <a class="link" href="teas.html">Browse Teas</a>
+                </nav>
+            </section>
+        </header>
+
+        <section class="teas">
+            <div id="searchResults" class="row">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <nav class="secondary-menu-container">
+                <ul class="secondary-menu">
+                    <li class="menu-item">
+                        <a class="link" href="about.html">About</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="link" href="teas.html">Browse Teas</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="link" href="locations.html">Store Locator</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="copyright">T2 is a copyright of T2 Teas.</p>
+        </footer>
+  
+
+
+
+        <template id="searchResultTemplate">
+            <div class="card">
+                <div class="thumbnail">
+                    <img class="thumbnail-image" src="images/variety.png" alt="Tea Image" />
+                </div>
+
+                <div class="thumbnail-details">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </template>
+
+        <script>
+            
+            const data = [
+                {
+                    "title":"Melbourne Breakfast",
+                    "description":"Loose Leaf - Smooth blend of bold, malty black tea and rich velvety vanilla.",
+                    "img":"file:images/melbBreakfast.png"
+                },
+
+                {
+                    "title":"English Breakfast",
+                    "description":"Loose Leaf - Robust, coppery Sri Lankan tea with brisk, bold flavours",
+                    "img":"file:images/englishBreak.png"
+                },
+
+                {
+                    "title":"French Earl",
+                    "description":"Tea Bags - Sweet fruits, rose, sunflower and hibiscus, with a touch of bergamot to finish.",
+                    "img":"file:images/frenchEarl.png"
+                },
+
+                {
+                    "title":"Gorgeous Geisha",
+                    "description":"Tea Bags - Smooth green tea with strawberries and lush hints of cream.",
+                    "img":"file:images/gorgGeisha.png"
+                },
+
+                {
+                    "title":"Lemon Ginger",
+                    "description":"Tea Bags - Fresh, bright and zesty lemongras with the warming spice of ginger.",
+                    "img":"file:images/lemonGinger.png"
+                },
+
+                {
+                    "title":"Tummy Tea",
+                    "description":"Tea Bags - Calendula, fennel, peppermint, and liquorice root.",
+                    "img":"file:images/tummy.png"
+                },
+
+                {
+                    "title":"Sleep Tight",
+                    "description":"Tea Bags - Lemon balm, lavender, jasmine and rose to help you wind down at sundown.",
+                    "img":"file:images/sleepTight.png"
+                },
+
+                {
+                    "title":"Chai Tea",
+                    "description":"Loose Leaf - Fragrant cinnamon, cardamom, ginger and a strong clove finish.",
+                    "img":"file:images/chai.png"
+                },
+            ];
+
+            const container = document.querySelector('#searchResults');
+            const template = document.querySelector('#searchResultTemplate');
+            data.forEach(function(item) {
+                const clone = template.content.cloneNode(true);
+                clone.querySelector('img').src = item.img;
+                clone.querySelector('h3').textContent = item.title;
+                clone.querySelector('p').textContent = item.description;
+
+                container.appendChild(clone);
+            });
+        </script>
+    </body>
+</html>
+

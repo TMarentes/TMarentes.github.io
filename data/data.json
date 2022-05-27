@@ -1,0 +1,49 @@
+[
+    {
+        "title":"Melbourne Breakfast",
+        "description":"Loose Leaf - Smooth blend of bold, malty black tea and rich velvety vanilla.",
+        "img":"file:images/melbBreakfast.png"
+    },
+
+    {
+        "title":"English Breakfast",
+        "description":"Loose Leaf - Robust, coppery Sri Lankan tea with brisk, bold flavours",
+        "img":"file:images/englishBreak.png"
+    },
+
+    {
+        "title":"French Earl",
+        "description":"Tea Bags - Sweet fruits, rose, sunflower and hibiscus, with a touch of bergamot to finish.",
+        "img":"file:images/frenchEarl.png"
+    },
+
+    {
+        "title":"Gorgeous Geisha",
+        "description":"Tea Bags - Smooth green tea with strawberries and lush hints of cream.",
+        "img":"file:images/gorgGeisha.png"
+    },
+
+    {
+        "title":"Lemon Ginger",
+        "description":"Tea Bags - Fresh, bright and zesty lemongras with the warming spice of ginger.",
+        "img":"file:images/lemonGinger.png"
+    },
+
+    {
+        "title":"Tummy Tea",
+        "description":"Tea Bags - Calendula, fennel, peppermint, and liquorice root.",
+        "img":"file:images/tummy.png"
+    },
+
+    {
+        "title":"Sleep Tight",
+        "description":"Tea Bags - Lemon balm, lavender, jasmine and rose to help you wind down at sundown.",
+        "img":"file:images/sleepTight.png"
+    },
+
+    {
+        "title":"Chai Tea",
+        "description":"Loose Leaf - Fragrant cinnamon, cardamom, ginger and a strong clove finish.",
+        "img":"file:images/chai.png"
+    }
+]

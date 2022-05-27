@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Queens Plaza",
+        "address": "Shop TLG-19, Queens Plaza, 226 Queens Street, Brisbane, QLD 4000"
+    },
+
+    {
+        "name": "Indooroopilly",
+        "address": "Shop 2134, Indooroopilly Shopping Centre 322 Moggil Rd Indooroopilly, QLD 4068"
+    },
+
+    {
+        "name": "Carindale",
+        "address": "Shop 1208, Westfield Carindale 1151 Creek Rd Carindale, QLD 4152"
+    },
+
+    {
+        "name": "Garden City",
+        "address": "Shop 2331, Westfield Garden City Cnr Logan & Kessels Rd Upper Mt Gravatt, QLD 4122"
+    }
+]
+
